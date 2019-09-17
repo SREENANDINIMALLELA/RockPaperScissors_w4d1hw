@@ -14,6 +14,6 @@ get '/'do
 erb(:home)
 end
 
-get '/about_us'do
-  erb(:about_us)
+get '/game_rules'do
+  erb(:game_rules)
 end

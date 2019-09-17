@@ -4,9 +4,7 @@ class Game
     win = nil
 
     player1_selection = Game.player1(selection)
-    p player1_selection
     player2_selection =rand(0..2)
-    p player2_selection
     if player1_selection == 0 && player2_selection == 1
       win ='Player2 win by showing paper'
     elsif player1_selection == 1&& player2_selection == 2
@@ -19,8 +17,8 @@ class Game
       win = 'you won by showing Scissors'
     elsif player1_selection==0 && player2_selection ==2
       win = 'you won by showing Rock'
-    else
-       p "tie for both of you"
+    elsif player1_selection==player2_selection
+       win ="tie for both of you"
     end
     return win
   end
